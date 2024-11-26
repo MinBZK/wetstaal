@@ -1,0 +1,14 @@
+name: Publish to regels.overheid.nl
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+jobs:
+  build-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: minbzk/regels.overheid.nl/.github/actions/publish-respec-document-release@main
+        with:
+          token: ${{ secrets.REGELS_PUBLICATION_TOKEN }}
+          owner: 'MinBZK'
+          repo: 'wetstaal'

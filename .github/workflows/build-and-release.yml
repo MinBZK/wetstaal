@@ -1,0 +1,13 @@
+name: Build and release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: minbzk/regels.overheid.nl/.github/actions/build-and-release-respec-document@main
+        with:
+          name: 'WetsTaal'
+          token: ${{ secrets.GITHUB_TOKEN }}
