@@ -7,7 +7,7 @@ let respecConfig = {
   pubDomain: "dk",
   shortName: "WetsTaal",
   publishDate: "2022-06-24",
-  publishVersion: "1.0.0",
+  publishVersion: "0.0.2",
 
   previousVersion: "0.0.2",
   previousPublishDate: "2014-05-01",
