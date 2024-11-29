@@ -48,7 +48,7 @@ let respecConfig = {
   alternateFormats: [
       {
           label: "pdf",
-          uri: "WetsTaal.pdf",
+          uri: "https://regels.overheid.nl/standaarden/wetstaal/pdf",
       },
   ],
 };
